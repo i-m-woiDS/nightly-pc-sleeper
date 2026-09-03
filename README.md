@@ -4,7 +4,7 @@ print(" Bedtime check initiated...")
 
 # Tell Python explicitly to send this pop-up to your main desktop screen (:0)
 os.environ["DISPLAY"] = ":0"
-os.environ["XAUTHORITY"] = "/home/mamoona/.Xauthority"
+os.environ["XAUTHORITY"] = "/home/user/.Xauthority"
 
 popup_command = (
     'zenity --question '
