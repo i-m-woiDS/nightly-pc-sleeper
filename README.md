@@ -1,8 +1,8 @@
 import os
 
-print(" Bedtime check initiated...")
+print(" sleep mode active...")
 
-# Tell Python explicitly to send this pop-up to your main desktop screen (:0)
+
 os.environ["DISPLAY"] = ":0"
 os.environ["XAUTHORITY"] = "/home/user/.Xauthority"
 
@@ -14,7 +14,7 @@ popup_command = (
     '--timeout=60'
 )
 
-# Launch the window and catch your choice (0 = Keep Awake, 1/Timeout = Shutdown)
+
 response = os.system(popup_command)
 
 if response == 0:
